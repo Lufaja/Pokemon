@@ -1,34 +1,53 @@
-﻿namespace Pokemon
+﻿using Pokemon;
+using System;
+internal class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
+        List<Pokeball> team = new List<Pokeball> { };
 
-            bool x = true;
-            while (x)
+
+        Console.WriteLine("Enter your trainer's name: ");
+        string Trainer_1 = Console.ReadLine();
+
+        Console.WriteLine("Enter second trainer's name: ");
+        string Trainer_2 = Console.ReadLine();
+        Trainer trainer1 = new Trainer(Trainer_1);
+        Trainer trainer2 = new Trainer(Trainer_2);
+        bool x = true;
+        for (int i = 0; i <= 5; i++)
+        {
+            Charmander charmander = new Charmander("charmander", "fire", "water", 100);
+            Pokeball pokeball = new Pokeball(false, charmander);
+            trainer1.AddPokemon(pokeball);
+
+        }
+        for (int i = 0; i <= 5; i++)
+        {
+            Charmander charmander = new Charmander("charmander", "fire", "water", 100);
+            Pokeball pokeball = new Pokeball(false, charmander);
+            trainer2.AddPokemon(pokeball);
+        }
+        while (x)
+        {
+            for (int i = 1; i <= 6; i++)
             {
-                Console.WriteLine("Enter Charmander's name: ");
-                string char_name = Console.ReadLine();
-                Charmander charmander = new Charmander(char_name, "fire", "water", 100);
-                Console.WriteLine("Name: " + charmander.GetName());
-                Console.WriteLine("Type: " + charmander.GetType());
-                Console.WriteLine("Weakness: " + charmander.GetWeakness());
-                Console.WriteLine("Hp: " + charmander.GetHp());
-                for (int i = 0; i <= 10; i++)
-                { Console.WriteLine(char_name); }
-                Console.WriteLine("Do you want to continue y/n: ");
-                string check_state = Console.ReadLine().ToLower();
-                if (check_state == "y")
-                {
-                    x = true;
-                }
-                else
-                {
-                    x = false; break;
-                }
+                trainer1.Throw(i);
+                trainer1.CallBack();
+                trainer2.Throw(i);
+                trainer2.CallBack();
+            }
+            Console.WriteLine("Do you want to continue y/n: ");
+            string check_state = Console.ReadLine().ToLower();
+            if (check_state == "y")
+            {
+                x = true;
+            }
+            else
+            {
+                x = false; break;
             }
         }
-
     }
+
 }

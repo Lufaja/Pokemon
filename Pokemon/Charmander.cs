@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Pokemon
 {
-    public class Charmander
+    using System;
+
+
+
+    class Charmander
     {
         public string name;
+        public string species = "Charmander";
         public string type;
         public string weakness;
         public int hp;
@@ -20,28 +25,32 @@ namespace Pokemon
             this.weakness = weakness;
             this.hp = hp;
         }
-        public string GetName()
+        public string getName()
         {
             return name;
         }
-        public void SetName(string name)
-        {
-            this.name = name;
-        }
-        public string GetType()
+        public string getType()
         {
             return type;
         }
-        public string GetWeakness()
+        public string getWeakness()
         { return weakness; }
 
-        public int GetHp()
+        public int getHp()
         { return hp; }
 
+        public void setHp(int hp)
+        {
+            this.hp = hp;
+        }
+
+        public void setName(string name)
+        {
+            this.name = name;
+        }
         public void BattleCry()
         {
-            for (int i = 0; i <= 10; i++)
-            { Console.WriteLine(this.name); }
+            Console.WriteLine(this.species);
         }
     }
 }
