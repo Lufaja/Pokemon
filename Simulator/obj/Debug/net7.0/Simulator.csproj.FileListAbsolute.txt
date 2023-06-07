@@ -1,0 +1,15 @@
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\bin\Debug\net7.0\Simulator.exe
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\bin\Debug\net7.0\Simulator.deps.json
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\bin\Debug\net7.0\Simulator.runtimeconfig.json
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\bin\Debug\net7.0\Simulator.dll
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\bin\Debug\net7.0\Simulator.pdb
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.csproj.AssemblyReference.cache
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.AssemblyInfoInputs.cache
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.AssemblyInfo.cs
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.csproj.CoreCompileInputs.cache
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.dll
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\refint\Simulator.dll
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.pdb
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.genruntimeconfig.cache
+C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\ref\Simulator.dll
