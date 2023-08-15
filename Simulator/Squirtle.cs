@@ -9,7 +9,7 @@ namespace Simulator
 {
     internal class Squirtle : Pokemon
     {
-        public Squirtle(string name, int hp) : base(name, hp)
+        public Squirtle(string name, bool alive) : base(name, alive)
         {
             this.species = "Squirtle";
             this.type = "Water";

@@ -10,38 +10,40 @@ namespace Simulator
 {
     internal class Pokeball
     {
-        public Pokemon charmander;
+        public Pokemon pokemon;
         public bool state;
 
-        public Pokeball(bool state, Pokemon charmander)
+        public Pokeball(bool state, Pokemon pokemon)
         {
             this.state = state;
-            this.charmander = charmander;
+            this.pokemon = pokemon;
         }
         public void ThrowPokeball()
         {
-            Console.WriteLine(this.charmander);
+            Console.WriteLine(this.pokemon);
         }
         public bool GetState()
         {
-
             return this.state;
-
         }
-        public int getHp()
+        public bool getAlive()
         {
-            return this.charmander.getHp();
+            return pokemon.getAlive();
+        }
+
+        public void setAlive(bool alive)
+        {
+            this.pokemon.setAlive(alive);
         }
         public Pokemon OpenBall()
         {
-            var pokemon = this.charmander;
-            this.charmander = null;
+            var pokemon = this.pokemon;
             this.state = true;
             return pokemon;
         }
-        public void CloseBall(Pokemon charmander)
+        public void CloseBall(Pokemon pokemon)
         {
-            this.charmander = charmander;
+            this.pokemon = pokemon;
             this.state = false;
         }
 

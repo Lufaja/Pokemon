@@ -8,7 +8,7 @@ namespace Simulator
 {
     internal class Bulbasaur : Pokemon
     {
-        public Bulbasaur(string name, int hp) : base(name, hp)
+        public Bulbasaur(string name, bool alive) : base(name, alive)
         {
             this.species = "Bulbasaur";
             this.type = "Grass";

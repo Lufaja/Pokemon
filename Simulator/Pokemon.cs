@@ -5,12 +5,12 @@ internal abstract class Pokemon
     public string species;
     public string type;
     public string weakness;
-    public int hp;
+    public bool alive;
 
-    public Pokemon(string name, int hp)
+    public Pokemon(string name, bool alive)
     {
         this.name = name;
-        this.hp = hp;
+        this.alive = alive;
     }
     public string getName()
     {
@@ -23,17 +23,20 @@ internal abstract class Pokemon
     public string getWeakness()
     { return weakness; }
 
-    public int getHp()
-    { return hp; }
+    public bool getAlive()
+    { return alive; }
 
-    public void setHp(int hp)
+    public void setAlive(bool alive)
     {
-        this.hp = hp;
+        this.alive = alive;
     }
-
     public void setName(string name)
     {
         this.name = name;
+    }
+    public string getStrength()
+    {
+        return type;
     }
     public abstract void BattleCry();
 }
