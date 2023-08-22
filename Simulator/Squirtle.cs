@@ -11,13 +11,14 @@ namespace Simulator
     {
         public Squirtle(string name, bool alive) : base(name, alive)
         {
-            this.species = "Squirtle";
-            this.type = "Water";
-            this.weakness = "Grass";
+            setSpecies("Squirtle");
+            setType(AttributeTypes.Water);
+            setWeakness(AttributeTypes.Grass);
         }
         public override void BattleCry()
         {
-            Console.WriteLine(this.species);
+            Console.WriteLine(getSpecies());
         }
     }
+
 }

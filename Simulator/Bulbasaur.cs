@@ -10,13 +10,13 @@ namespace Simulator
     {
         public Bulbasaur(string name, bool alive) : base(name, alive)
         {
-            this.species = "Bulbasaur";
-            this.type = "Grass";
-            this.weakness = "Water";
+            setSpecies("Bulbasaur");
+            setType(AttributeTypes.Grass);
+            setWeakness(AttributeTypes.Fire);
         }
         public override void BattleCry()
         {
-            Console.WriteLine(this.species);
+            Console.WriteLine(getSpecies());
         }
     }
 

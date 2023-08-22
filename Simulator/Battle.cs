@@ -9,9 +9,9 @@ namespace Simulator
 {
     internal class Battle
     {
-        public Trainer challenger;
-        public Trainer opponent;
-        public int roundsInBattle;
+        private Trainer challenger;
+        private Trainer opponent;
+        private int roundsInBattle;
 
         public Battle(Trainer trainer1, Trainer trainer2)
         {
@@ -60,6 +60,8 @@ namespace Simulator
             {
                 if (!challenger.checkBelt() || !opponent.checkBelt())
                 {
+                    challenger.CallBack(challengerPokemon);
+                    opponent.CallBack(opponentPokemon);
                     break;
                 }
 

@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Simulator
 {
-    internal class Pokeball
+    internal sealed class Pokeball
     {
-        public Pokemon pokemon;
-        public bool state;
+        private Pokemon pokemon;
+        private bool state;
 
         public Pokeball(bool state, Pokemon pokemon)
         {
@@ -22,9 +22,17 @@ namespace Simulator
         {
             Console.WriteLine(this.pokemon);
         }
+        public Pokemon getPokemon()
+        {
+            return pokemon;
+        }
+        public void setPokemon(Pokemon pokemon)
+        {
+            this.pokemon = pokemon;
+        }
         public bool GetState()
         {
-            return this.state;
+            return state;
         }
         public bool getAlive()
         {
@@ -33,7 +41,7 @@ namespace Simulator
 
         public void setAlive(bool alive)
         {
-            this.pokemon.setAlive(alive);
+            pokemon.setAlive(alive);
         }
         public Pokemon OpenBall()
         {

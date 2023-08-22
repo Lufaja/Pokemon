@@ -1,28 +1,47 @@
+using Simulator;
 using System;
 internal abstract class Pokemon
 {
-    public string name;
-    public string species;
-    public string type;
-    public string weakness;
-    public bool alive;
+    private string species;
+    private string name;
+    private AttributeTypes type;
+    private AttributeTypes weakness;
+    private bool alive;
 
     public Pokemon(string name, bool alive)
     {
         this.name = name;
         this.alive = alive;
+        this.type = new AttributeTypes();
+        this.weakness = new AttributeTypes();
+    }
+
+    public string getSpecies()
+    {
+        return species;
+    }
+    public void setSpecies(string species)
+    {
+        this.species = species;
     }
     public string getName()
     {
         return name;
     }
-    public string getType()
+    public AttributeTypes getType()
     {
         return type;
     }
-    public string getWeakness()
-    { return weakness; }
-
+    public void setType(AttributeTypes type)
+    {
+        this.type = type;
+    }
+    public AttributeTypes getWeakness()
+    { return weakness;}
+    public void setWeakness(AttributeTypes weakness)
+    {
+        this.weakness = weakness;
+    }
     public bool getAlive()
     { return alive; }
 
@@ -34,7 +53,7 @@ internal abstract class Pokemon
     {
         this.name = name;
     }
-    public string getStrength()
+    public AttributeTypes getStrength()
     {
         return type;
     }

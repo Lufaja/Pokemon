@@ -8,12 +8,12 @@ namespace Simulator
 {
     internal class Arena
     {
-        public Battle battle;
-        public int pointsChallenger;
-        public int pointsOpponent;
-        public int drawPoints;
-        public int rounds;
-        public int battles;
+        private Battle battle;
+        private int pointsChallenger;
+        private int pointsOpponent;
+        private int drawPoints;
+        private int rounds;
+        private int battles;
         public Arena(Battle battle)
         {
             this.battle = battle;

@@ -10,9 +10,10 @@ namespace Simulator
 {
     internal class Trainer
     {
-        public Pokemon CurrentPkmn;
-        public string name;
-        public List<Pokeball> belt = new List<Pokeball>();
+        private string name;
+        private List<Pokeball> belt = new List<Pokeball>();
+        private int maxPokemon = 6;
+
         public Trainer(string name)
         {
             this.name = name;
@@ -30,14 +31,16 @@ namespace Simulator
         {
             foreach (Pokeball pokeball in belt)
             {
-                pokeball.pokemon.setAlive(true);
+                var x = pokeball.getPokemon();
+                x.setAlive(true);
+                pokeball.setPokemon(x);
             }
         }
 
         public Pokemon Throw(Pokeball pokeball)
         {
-            Console.WriteLine($"{this.name} sent out {pokeball.pokemon.getName()}!");
-            pokeball.pokemon.BattleCry();
+            Console.WriteLine($"{this.name} sent out {pokeball.getPokemon().getName()}!");
+            pokeball.getPokemon().BattleCry();
             return pokeball.OpenBall();
         }
         public void CallBack(Pokemon CurrentPkmn)
@@ -53,23 +56,23 @@ namespace Simulator
         }
         public void AddPokemon(Pokeball pokeball)
         {
-            if (belt.Count >= 6)
+            if (belt.Count >= maxPokemon)
             {
-                Console.WriteLine("It failed! Your team already has 6 pokemon!");
+                throw new Exception($"It failed! Your team already has {maxPokemon} pokemon!");
             }
             else
             {
                 this.belt.Add(pokeball);
-                Console.WriteLine($"{pokeball.pokemon.getName()} has been added to your team");
+                Console.WriteLine($"{pokeball.getPokemon().getName()} has been added to your team");
             }
         }
         public void ShowTeam()
         {
             Console.WriteLine($"{this.name}'s Team ");
             int index = 1;
-            foreach (var pokemon in belt)
+            foreach (var pokeball in belt)
             {
-                Console.WriteLine(index + ". " + pokemon.pokemon.getName());
+                Console.WriteLine(index + ". " + pokeball.getPokemon().getName());
                 index++;
             }
         }

@@ -10,13 +10,13 @@ namespace Simulator
     {
         public Charmander(string name, bool alive) : base(name, alive)
         {
-            this.species = "Charmander";
-            this.type = "Fire";
-            this.weakness = "Water";
+            setSpecies("Charmander");
+            setType(AttributeTypes.Fire);
+            setWeakness(AttributeTypes.Water);
         }
         public override void BattleCry()
         {
-            Console.WriteLine(this.species);
+            Console.WriteLine(getSpecies());
         }
     }
 
