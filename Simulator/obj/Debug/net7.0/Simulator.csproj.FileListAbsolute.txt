@@ -3,7 +3,6 @@ C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\bin\Debug\net7.0\Simulat
 C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\bin\Debug\net7.0\Simulator.runtimeconfig.json
 C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\bin\Debug\net7.0\Simulator.dll
 C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\bin\Debug\net7.0\Simulator.pdb
-C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.csproj.AssemblyReference.cache
 C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.AssemblyInfoInputs.cache
 C:\Users\Lukas\Documents\Projecten-V2\Pokemon\Simulator\obj\Debug\net7.0\Simulator.AssemblyInfo.cs
