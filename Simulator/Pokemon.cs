@@ -12,8 +12,8 @@ internal abstract class Pokemon
     {
         this.name = name;
         this.alive = alive;
-        this.type = new AttributeTypes();
-        this.weakness = new AttributeTypes();
+        type = new AttributeTypes();
+        weakness = new AttributeTypes();
     }
 
     public string getSpecies()

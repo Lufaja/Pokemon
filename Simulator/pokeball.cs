@@ -30,7 +30,7 @@ namespace Simulator
         {
             this.pokemon = pokemon;
         }
-        public bool GetState()
+        public bool getState()
         {
             return state;
         }

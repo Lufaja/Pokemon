@@ -15,8 +15,8 @@ namespace Simulator
 
         public Battle(Trainer trainer1, Trainer trainer2)
         {
-            this.challenger = trainer1;
-            this.opponent = trainer2;
+            challenger = trainer1;
+            opponent = trainer2;
         }
 
         public Trainer getChallenger()

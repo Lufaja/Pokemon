@@ -48,7 +48,7 @@ namespace Simulator
             Console.WriteLine("Come back " + CurrentPkmn.getName() + "!");
             foreach (var pokeball in this.belt)
             {
-                if (pokeball.GetState())
+                if (pokeball.getState())
                 {
                     pokeball.CloseBall(CurrentPkmn);
                 }
